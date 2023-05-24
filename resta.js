@@ -1,5 +1,4 @@
-let sustraendo;
-let minuendo;
-sustraendo = 2;
-minuendo = 10;
-console.log(minuendo - sustraendo);
+let sustraendo = 2;
+let minuendo = 10;
+let resultado = minuendo - sustraendo;
+console.log(resultado);
