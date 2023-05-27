@@ -4,5 +4,5 @@ let area = base * altura;
 console.log(area);
 /** Ejercio 2
  * A)15
- * B)
+ * B)66.25
  */
