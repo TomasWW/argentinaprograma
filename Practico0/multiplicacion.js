@@ -5,4 +5,4 @@ let num3 = 6;
 let resultado = num1 * num2 * num3;
 
 console.log(resultado);
-//El valor es 204
+//El valor es: 204
