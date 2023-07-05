@@ -15,17 +15,21 @@ function obtenerJugadaComputadora() {
 
 function obtenerJugadaUsuario(eleccion) {
   let usuario;
+
   while (eleccion < 0 || eleccion > 2) {
-    if (eleccion == 0) {
-      usuario = "Piedra";
-    } else if (eleccion == 1) {
-      usuario = "Papel";
-    } else if (eleccion == 2) {
-      usuario = "Tijeras";
-    } else console.log("Debes elegir entre 0 1 2");
-    //   console.log(usuario);
-    return usuario;
+    console.log("Debes elegir entre 0, 1 o 2");
+    eleccion = readlineSync.question("Piedra = 0, Papel = 1 o Tijeras = 2: ");
   }
+
+  if (eleccion == 0) {
+    usuario = "Piedra";
+  } else if (eleccion == 1) {
+    usuario = "Papel";
+  } else if (eleccion == 2) {
+    usuario = "Tijeras";
+  }
+
+  return usuario;
 }
 
 function determinarGanador(compu, usuario) {
@@ -58,7 +62,7 @@ function determinarGanador(compu, usuario) {
 }
 
 let compu = obtenerJugadaComputadora();
-let usuario = obtenerJugadaUsuario(
+let user = obtenerJugadaUsuario(
   readlineSync.question("Piedra = 0, Papel= 1 o Tijeras = 2 ")
 );
-determinarGanador(compu, usuario);
+determinarGanador(compu, user);
